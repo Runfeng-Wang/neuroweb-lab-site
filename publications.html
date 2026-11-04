@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-zh="科研成果 · 脑智融合实验室" data-en="Publications · 脑智融合实验室">科研成果 · 脑智融合实验室</title>
+<meta name="description" content="脑智融合实验室">
+<script>(function(){var l='zh';try{var m=location.search.match(/[?&]lang=(zh|en)/);l=m?m[1]:(localStorage.getItem('bifl-lang')||'zh');}catch(e){}var d=document.documentElement;d.setAttribute('data-lang',l);d.lang=l==='en'?'en':'zh-CN';})();</script>
+<!-- 国内访问：把下面的 googleapis.com / gstatic.com 换成 googleapis.cn / gstatic.cn -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="pubs">
+<a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+
+<!-- ===== HEADER START ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <button class="lang-switch" type="button" aria-label="切换语言 / Switch language">
+      <span data-v="zh">中</span><span data-v="en">EN</span>
+    </button>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="脑智融合实验室 首页 / Home">
+      <img class="brand-emblem" src="images/sjtu-emblem.png" alt="上海交通大学校徽" width="60" height="60">
+      <span class="brand-text">
+        <span class="brand-name">脑智融合实验室</span>
+        <span class="brand-sub">Lab English Name</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="zh">菜单</span><span class="en">Menu</span><i></i></button>
+    <nav class="nav" id="site-nav">
+      <ul>
+        <li data-nav="home"><a href="index.html"><span class="zh">首页</span><span class="en">Home</span></a></li>
+        <li data-nav="research"><a href="research.html"><span class="zh">研究方向</span><span class="en">Research</span></a></li>
+        <li data-nav="people"><a href="people.html"><span class="zh">团队成员</span><span class="en">People</span></a></li>
+        <li data-nav="pubs"><a href="publications.html"><span class="zh">科研成果</span><span class="en">Publications</span></a></li>
+        <li data-nav="news"><a href="list.html"><span class="zh">新闻动态</span><span class="en">News</span></a></li>
+        <li data-nav="join"><a href="join.html"><span class="zh">加入我们</span><span class="en">Join Us</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- ===== HEADER END ===== -->
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="breadcrumb"><a href="index.html"><span class="zh">首页</span><span class="en">Home</span></a><span aria-hidden="true">/</span><span><span class="zh">科研成果</span><span class="en">Publications</span></span></nav>
+      <h1 class="title"><span class="zh">科研成果</span><span class="en">Publications</span></h1>
+    </div>
+  </div>
+
+  <div class="wrap pubs-layout" data-pubs>
+    <!-- 左侧筛选：类型 / 研究方向 / 年份。年份按下方论文自动生成，数量自动统计 -->
+    <aside class="pub-side">
+      <label class="pub-search"><span class="zh">搜索</span><span class="en">Search</span>
+        <input type="search" placeholder="标题 / 作者 / Title / Author" data-q>
+      </label>
+      <div class="pf-group">
+        <h4><span class="zh">论文类型</span><span class="en">Type</span></h4>
+        <ul data-filter="type">
+          <li><button type="button" data-v="journal"><span class="zh">期刊</span><span class="en">Journal</span></button></li>
+          <li><button type="button" data-v="conference"><span class="zh">会议</span><span class="en">Conference</span></button></li>
+          <li><button type="button" data-v="preprint"><span class="zh">预印本</span><span class="en">Preprint</span></button></li>
+          <li><button type="button" data-v="book"><span class="zh">专著 / 章节</span><span class="en">Book / Chapter</span></button></li>
+        </ul>
+      </div>
+      <div class="pf-group">
+        <h4><span class="zh">研究方向</span><span class="en">Direction</span></h4>
+        <ul data-filter="dir">
+          <li><button type="button" data-v="nr"><span class="tag tag-nr">NR</span><span class="zh">神经再生型脑机接口</span><span class="en">Neuroregenerative BCI</span></button></li>
+          <li><button type="button" data-v="us"><span class="tag tag-us">US</span><span class="zh">超声脑机接口</span><span class="en">Ultrasound BCI</span></button></li>
+          <li><button type="button" data-v="bf"><span class="tag tag-bf">BF</span><span class="zh">脑机融合理论</span><span class="en">Brain–machine fusion</span></button></li>
+        </ul>
+      </div>
+      <div class="pf-group">
+        <h4><span class="zh">年份</span><span class="en">Year</span></h4>
+        <ul data-filter="year" class="pf-years"></ul>
+      </div>
+      <button type="button" class="pf-clear" data-clear hidden><span class="zh">清除筛选</span><span class="en">Clear filters</span></button>
+    </aside>
+
+    <div class="pub-main">
+      <p class="pub-count" aria-live="polite"></p>
+
+      <!-- 论文条目：按年份放进对应的 <section class="pub-year">，没有的年份复制一段。
+           data-type：journal / conference / preprint / book
+           data-dir：方向代号，多个用空格隔开（nr / us / bf）
+           摘要和 BibTeX 不需要就删掉对应按钮和 .pub-more -->
+      <section class="pub-year" data-year="2026">
+        <h2 class="year-bar"><span>2026</span></h2>
+        <ol class="pub-list">
+          <li class="pub" data-type="journal" data-dir="nr">
+            <div class="pub-tags"><span class="tag tag-nr">NR</span><span class="pill"><span class="zh">期刊</span><span class="en">Journal</span></span><span class="pill">Perspective</span><span class="pill pill-ok"><span class="zh">已发表</span><span class="en">Published</span></span></div>
+            <p class="pub-authors"><b>Liang Guo</b>*</p>
+            <h3 class="pub-title"><a href="https://doi.org/10.1088/1741-2552/aeb442" target="_blank" rel="noopener">Cybertissue neuroprosthetics: a new implantable neuroprosthetics paradigm to achieve seamless lifetime integration</a></h3>
+            <p class="pub-venue"><i>Journal of Neural Engineering</i>, 23(5): 053003, 2026</p>
+            <div class="pub-links">
+              <a class="pl" href="https://doi.org/10.1088/1741-2552/aeb442" target="_blank" rel="noopener">DOI</a>
+              <button class="pl" type="button" data-more="abs"><span class="zh">简介</span><span class="en">Summary</span></button>
+              <button class="pl" type="button" data-more="bib">BibTeX</button>
+            </div>
+            <div class="pub-more" data-panel="abs"><div><div class="pm-box">
+              <p><span class="zh">传统电极式神经接口长期植入后，会因慢性异物反应和纤维包裹而信号衰减，这是植入式神经假体难以终身使用的根本障碍。本文提出“赛博组织神经假体”范式：把植入体本身设计成一种功能组织，以活细胞为主体，辅以极少量纳米电子、纳米材料或基因修饰，使其在结构和功能上与宿主神经系统融为一体，从而实现长期稳定的神经调控与信息交换。文章梳理了这一方向下的新兴研究，并讨论从工程化赛博细胞到可移植活体器件的机遇。</span><span class="en">Electrode-based neural interfaces lose signal over time to chronic foreign-body reactions and fibrotic encapsulation, a fundamental obstacle to lifelong implants. This perspective proposes cybertissue neuroprosthetics: designing the implant itself as a functional tissue made mainly of living cells, optionally with minimal nanoelectronics, nanomaterials or genetic modification, so that it integrates structurally and functionally with the host nervous system for stable long-term neuromodulation and information exchange. It brings together emerging work under this umbrella and discusses opportunities from engineered cybercells to transplantable living devices.</span></p>
+              <p class="pm-keys"><b><span class="zh">关键词</span><span class="en">Keywords</span></b> cybertissue · living neural implant · neural interface · neuromodulation · seamless integration · tissue engineering</p>
+            </div></div></div>
+            <div class="pub-more" data-panel="bib"><div><div class="pm-box">
+<pre>@article{guo2026cybertissue,
+  author  = {Guo, Liang},
+  title   = {Cybertissue neuroprosthetics: a new implantable
+             neuroprosthetics paradigm to achieve seamless
+             lifetime integration},
+  journal = {Journal of Neural Engineering},
+  volume  = {23},
+  number  = {5},
+  pages   = {053003},
+  year    = {2026},
+  doi     = {10.1088/1741-2552/aeb442}
+}</pre>
+              <button class="pl" type="button" data-copy><span class="zh">复制</span><span class="en">Copy</span></button>
+            </div></div></div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 以下两条是占位，用来演示筛选效果，上线前删除 -->
+      <section class="pub-year" data-year="2025">
+        <h2 class="year-bar"><span>2025</span></h2>
+        <ol class="pub-list">
+          <li class="pub is-ph" data-type="conference" data-dir="us">
+            <div class="pub-tags"><span class="tag tag-us">US</span><span class="pill"><span class="zh">会议</span><span class="en">Conference</span></span><span class="pill pill-ok"><span class="zh">已录用</span><span class="en">Accepted</span></span></div>
+            <p class="pub-authors"><span class="zh">作者一, 作者二, 郭亮</span><span class="en">Author A, Author B, Liang Guo</span></p>
+            <h3 class="pub-title"><a href="#"><span class="zh">论文标题（占位示例）</span><span class="en">Paper title (placeholder)</span></a></h3>
+            <p class="pub-venue"><i><span class="zh">会议名称</span><span class="en">Conference name</span></i>, 2025</p>
+            <div class="pub-links"><a class="pl" href="#">PDF</a><a class="pl" href="#"><span class="zh">代码</span><span class="en">Code</span></a></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="pub-year" data-year="2024">
+        <h2 class="year-bar"><span>2024</span></h2>
+        <ol class="pub-list">
+          <li class="pub is-ph" data-type="journal" data-dir="bf nr">
+            <div class="pub-tags"><span class="tag tag-bf">BF</span><span class="tag tag-nr">NR</span><span class="pill"><span class="zh">期刊</span><span class="en">Journal</span></span><span class="pill pill-ok"><span class="zh">已发表</span><span class="en">Published</span></span></div>
+            <p class="pub-authors"><span class="zh">郭亮, 作者二</span><span class="en">Liang Guo, Author B</span></p>
+            <h3 class="pub-title"><a href="#"><span class="zh">论文标题（占位示例）</span><span class="en">Paper title (placeholder)</span></a></h3>
+            <p class="pub-venue"><i><span class="zh">期刊名称</span><span class="en">Journal name</span></i>, 2024</p>
+            <div class="pub-links"><a class="pl" href="#">PDF</a><a class="pl" href="#">DOI</a></div>
+          </li>
+        </ol>
+      </section>
+
+      <p class="pub-empty" hidden><span class="zh">该筛选条件下暂无论文。</span><span class="en">No publications match these filters.</span></p>
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER START ===== -->
+<!-- 实验室页脚 -->
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <img class="brand-emblem" src="images/sjtu-emblem.png" alt="上海交通大学校徽" width="52" height="52">
+        <span class="brand-text">
+          <span class="brand-name">脑智融合实验室</span>
+          <span class="brand-sub">Lab English Name</span>
+        </span>
+      </a>
+      <address>
+        <span class="zh">地址：待填写</span><span class="en">Address: to be added</span><br>
+        <span class="zh">邮箱：待填写</span><span class="en">Email: to be added</span><br>
+        <span class="zh">电话：待填写</span><span class="en">Tel: to be added</span>
+      </address>
+    </div>
+    <nav class="footer-col" aria-label="Lab">
+      <h4><span class="zh">实验室</span><span class="en">Lab</span></h4>
+      <ul>
+        <li><a href="index.html#about"><span class="zh">实验室简介</span><span class="en">About</span></a></li>
+        <li><a href="research.html"><span class="zh">研究方向</span><span class="en">Research</span></a></li>
+        <li><a href="people.html"><span class="zh">团队成员</span><span class="en">People</span></a></li>
+        <li><a href="publications.html"><span class="zh">科研成果</span><span class="en">Publications</span></a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="News">
+      <h4><span class="zh">资讯</span><span class="en">News</span></h4>
+      <ul>
+        <li><a href="list.html"><span class="zh">新闻动态</span><span class="en">News</span></a></li>
+        <li><a href="join.html"><span class="zh">加入我们</span><span class="en">Join Us</span></a></li>
+        <li><a href="#contact"><span class="zh">联系我们</span><span class="en">Contact</span></a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Links">
+      <h4><span class="zh">相关链接</span><span class="en">Links</span></h4>
+      <ul>
+        <li><a href="#"><span class="zh">链接名称</span><span class="en">Link</span></a></li>
+        <li><a href="#"><span class="zh">链接名称</span><span class="en">Link</span></a></li>
+        <li><a href="#"><span class="zh">链接名称</span><span class="en">Link</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<!-- 学校页脚：左侧校名也可换成学校标识图片（在 .univ-wordmark 里放 <img>） -->
+<footer class="global-footer" aria-label="University">
+  <div class="wrap gf-inner">
+    <a class="univ-wordmark" href="#">
+      <span class="uw-zh">上海交通大学</span>
+      <span class="uw-en">Shanghai Jiao Tong University</span>
+    </a>
+    <div class="gf-menu">
+      <ul class="gf-primary">
+        <li><a href="#"><span class="zh">大学主页</span><span class="en">University Home</span></a></li>
+        <li><a href="#"><span class="zh">学院主页</span><span class="en">School Home</span></a></li>
+        <li><a href="#"><span class="zh">校园地图</span><span class="en">Campus Map</span></a></li>
+        <li><a href="#"><span class="zh">信息门户</span><span class="en">Portal</span></a></li>
+        <li><a href="#"><span class="zh">图书馆</span><span class="en">Library</span></a></li>
+      </ul>
+      <ul class="gf-secondary">
+        <li><a href="#"><span class="zh">使用条款</span><span class="en">Terms of Use</span></a></li>
+        <li><a href="#"><span class="zh">隐私政策</span><span class="en">Privacy</span></a></li>
+        <li><a href="#"><span class="zh">版权声明</span><span class="en">Copyright</span></a></li>
+        <li><a href="#"><span class="zh">网站地图</span><span class="en">Site Map</span></a></li>
+        <li><a href="#"><span class="zh">无障碍</span><span class="en">Accessibility</span></a></li>
+      </ul>
+      <p class="gf-copy"><span class="zh">© 2026 上海交通大学　地址：待填写　备案号：待填写</span><span class="en">© 2026 Shanghai Jiao Tong University · Address: to be added · ICP: to be added</span></p>
+    </div>
+  </div>
+</footer>
+
+<a class="to-top" href="#main" aria-label="返回顶部 / Back to top">
+  <span class="hex"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 2.25h10M8 14V5.5M4 9.25l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+</a>
+<script src="js/main.js"></script>
+<!-- ===== FOOTER END ===== -->
+</body>
+</html>

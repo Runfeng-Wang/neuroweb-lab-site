@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-zh="脑智融合实验室" data-en="脑智融合实验室">脑智融合实验室</title>
+<meta name="description" content="脑智融合实验室">
+<script>(function(){var l='zh';try{var m=location.search.match(/[?&]lang=(zh|en)/);l=m?m[1]:(localStorage.getItem('bifl-lang')||'zh');}catch(e){}var d=document.documentElement;d.setAttribute('data-lang',l);d.lang=l==='en'?'en':'zh-CN';})();</script>
+<!-- 国内访问：把下面的 googleapis.com / gstatic.com 换成 googleapis.cn / gstatic.cn -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main"><span class="zh">跳到正文</span><span class="en">Skip to content</span></a>
+
+<!-- ===== HEADER START ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <button class="lang-switch" type="button" aria-label="切换语言 / Switch language">
+      <span data-v="zh">中</span><span data-v="en">EN</span>
+    </button>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="脑智融合实验室 首页 / Home">
+      <img class="brand-emblem" src="images/sjtu-emblem.png" alt="上海交通大学校徽" width="60" height="60">
+      <span class="brand-text">
+        <span class="brand-name">脑智融合实验室</span>
+        <span class="brand-sub">Lab English Name</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="zh">菜单</span><span class="en">Menu</span><i></i></button>
+    <nav class="nav" id="site-nav">
+      <ul>
+        <li data-nav="home"><a href="index.html"><span class="zh">首页</span><span class="en">Home</span></a></li>
+        <li data-nav="research"><a href="research.html"><span class="zh">研究方向</span><span class="en">Research</span></a></li>
+        <li data-nav="people"><a href="people.html"><span class="zh">团队成员</span><span class="en">People</span></a></li>
+        <li data-nav="pubs"><a href="publications.html"><span class="zh">科研成果</span><span class="en">Publications</span></a></li>
+        <li data-nav="news"><a href="list.html"><span class="zh">新闻动态</span><span class="en">News</span></a></li>
+        <li data-nav="join"><a href="join.html"><span class="zh">加入我们</span><span class="en">Join Us</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- ===== HEADER END ===== -->
+
+<main id="main">
+
+  <!-- 首页主图轮播（演示）：图片来自 Wikimedia Commons，正式上线请换成实验室自己的照片 -->
+  <section class="hero-carousel" aria-roledescription="carousel" aria-label="首页图片 / Featured images">
+    <div class="hc-viewport">
+      <div class="hc-track">
+        <figure class="hc-slide is-active" aria-roledescription="slide" aria-label="1 / 3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Brain-computer_interface_experiment.jpg/1920px-Brain-computer_interface_experiment.jpg" alt="脑机接口实验：受试者佩戴脑电帽，屏幕上显示解码结果 / A brain–computer interface experiment with a participant wearing an EEG cap" style="object-position:50% 50%" fetchpriority="high">
+          <figcaption class="hc-caption"><div class="wrap">
+            <p class="hc-kicker"><span class="zh">脑机接口</span><span class="en">Brain–Computer Interface</span></p>
+            <p class="hc-title"><span class="zh">从脑电信号中解码人的意图</span><span class="en">Decoding intention from brain signals</span></p>
+          </div></figcaption>
+          <a class="hc-credit" href="https://commons.wikimedia.org/wiki/File:Brain-computer_interface_experiment.jpg" target="_blank" rel="noopener">Photo: Laurens R. Krol · CC BY 4.0 · Wikimedia Commons</a>
+        </figure>
+        <figure class="hc-slide" aria-roledescription="slide" aria-label="2 / 3" aria-hidden="true">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/EEG_Recording_Cap.jpg/1920px-EEG_Recording_Cap.jpg" alt="佩戴脑电电极帽的受试者 / A participant wearing an EEG electrode cap" style="object-position:60% 40%" decoding="async">
+          <figcaption class="hc-caption"><div class="wrap">
+            <p class="hc-kicker"><span class="zh">神经信号采集</span><span class="en">Neural Recording</span></p>
+            <p class="hc-title"><span class="zh">高密度脑电采集</span><span class="en">High-density EEG recording</span></p>
+          </div></figcaption>
+          <a class="hc-credit" href="https://commons.wikimedia.org/wiki/File:EEG_Recording_Cap.jpg" target="_blank" rel="noopener" tabindex="-1">Photo: Chris Hope · CC BY 2.0 · Wikimedia Commons</a>
+        </figure>
+        <figure class="hc-slide" aria-roledescription="slide" aria-label="3 / 3" aria-hidden="true">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Brain_BCI.jpg/1920px-Brain_BCI.jpg" alt="通过脑机接口控制假肢手的演示 / A demonstration of controlling a prosthetic hand through a brain–computer interface" style="object-position:50% 35%" decoding="async">
+          <figcaption class="hc-caption"><div class="wrap">
+            <p class="hc-kicker"><span class="zh">神经康复</span><span class="en">Neurorehabilitation</span></p>
+            <p class="hc-title"><span class="zh">用意念控制假肢</span><span class="en">Controlling a prosthetic hand by thought</span></p>
+          </div></figcaption>
+          <a class="hc-credit" href="https://commons.wikimedia.org/wiki/File:Brain_BCI.jpg" target="_blank" rel="noopener" tabindex="-1">Photo: Adindva1 · CC BY-SA 4.0 · Wikimedia Commons</a>
+        </figure>
+      </div>
+    </div>
+    <div class="hc-bar"><div class="wrap">
+      <div class="hc-dots"><button class="hc-dot is-active" type="button" aria-label="第 1 张 / Slide 1" aria-current="true"><span></span></button><button class="hc-dot" type="button" aria-label="第 2 张 / Slide 2"><span></span></button><button class="hc-dot" type="button" aria-label="第 3 张 / Slide 3"><span></span></button></div>
+      <div class="hc-nav">
+        <button class="hc-prev" type="button" aria-label="上一张 / Previous"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button class="hc-pause" type="button" aria-label="暂停自动播放 / Pause" aria-pressed="false"><svg class="i-pause" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M5.5 3.5v9M10.5 3.5v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg class="i-play" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M5 3.2v9.6L12.6 8z" fill="currentColor"/></svg></button>
+        <button class="hc-next" type="button" aria-label="下一张 / Next"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 简介：居中（参考 Tian Lab） -->
+  <section class="intro deco-sides" id="about">
+    <div class="wrap">
+      <div class="intro-inner">
+        <h1 class="intro-title"><span class="zh">脑智融合实验室</span><span class="en">Lab English Name</span></h1>
+        <!-- 演示用简介文字（虚构），正式上线前请替换 -->
+        <div class="intro-text">
+          <p><span class="zh">脑智融合实验室致力于理解大脑如何处理信息，并将这些原理与人工智能方法相结合。我们以脑机接口为核心方向，研究如何从脑电、皮层脑电与神经影像信号中准确解码人的感知、意图与认知状态，进而构建安全、可靠、能够长期使用的人机交互系统。</span><span class="en">We study how the brain processes information and bring those principles together with artificial intelligence. Brain–computer interfaces are at the centre of our work: we develop methods that decode perception, intention and cognitive state from EEG, ECoG and neuroimaging signals, and we build human–machine interaction systems that are safe, reliable and fit for long-term use.</span></p>
+          <p><span class="zh">我们的研究横跨神经科学、信号处理与机器学习。一方面，我们发展高时空分辨率的神经信号采集与解码算法；另一方面，我们借鉴神经环路的结构与学习机制，设计更高效、泛化能力更强的类脑智能模型。实验室与临床团队保持紧密合作，推动研究成果走向神经康复与辅助交流等实际应用。</span><span class="en">Our research spans neuroscience, signal processing and machine learning. On one side, we develop recording and decoding methods with high spatial and temporal resolution; on the other, we draw on the structure and learning rules of neural circuits to design brain-inspired models that are more efficient and generalise better. Working closely with clinical partners, we aim to bring these advances into neurorehabilitation and assistive communication.</span></p>
+          <p><span class="zh">我们同样重视人才培养，鼓励学生在严谨的实验设计与开放的学术交流中成长。欢迎具有神经科学、计算机、电子工程、数学或心理学背景的同学加入我们。</span><span class="en">We care just as much about training people. We encourage students to grow through rigorous experimental design and open scientific exchange, and we welcome applicants with backgrounds in neuroscience, computer science, electrical engineering, mathematics or psychology.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 新闻动态：复制 <li> 可增加条目 -->
+  <section class="block" id="news">
+    <div class="wrap">
+      <div class="block-head">
+        <h2 class="h2"><span class="zh">新闻动态</span><span class="en">News</span></h2>
+        <a class="arrow-link" href="list.html"><span class="zh">全部新闻</span><span class="en">All news</span></a>
+      </div>
+      <ul class="rows">
+        <li><a href="content.html"><time>YYYY-MM-DD</time><span class="t"><span class="zh">新闻标题</span><span class="en">News headline</span></span></a></li>
+        <li><a href="content.html"><time>YYYY-MM-DD</time><span class="t"><span class="zh">新闻标题</span><span class="en">News headline</span></span></a></li>
+        <li><a href="content.html"><time>YYYY-MM-DD</time><span class="t"><span class="zh">新闻标题</span><span class="en">News headline</span></span></a></li>
+        <li><a href="content.html"><time>YYYY-MM-DD</time><span class="t"><span class="zh">新闻标题</span><span class="en">News headline</span></span></a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- 加入我们 -->
+  <section class="block band band-accent deco-sides" id="join">
+    <div class="wrap">
+      <div class="callout">
+        <div class="c-text">
+          <h2 class="h2"><span class="zh">加入我们</span><span class="en">Join Us</span></h2>
+          <span class="ph-lines"><i></i><i></i></span>
+        </div>
+        <div class="c-act"><a class="btn" href="join.html"><span class="zh">了解详情</span><span class="en">Learn more</span></a></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER START ===== -->
+<!-- 实验室页脚 -->
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <img class="brand-emblem" src="images/sjtu-emblem.png" alt="上海交通大学校徽" width="52" height="52">
+        <span class="brand-text">
+          <span class="brand-name">脑智融合实验室</span>
+          <span class="brand-sub">Lab English Name</span>
+        </span>
+      </a>
+      <address>
+        <span class="zh">地址：待填写</span><span class="en">Address: to be added</span><br>
+        <span class="zh">邮箱：待填写</span><span class="en">Email: to be added</span><br>
+        <span class="zh">电话：待填写</span><span class="en">Tel: to be added</span>
+      </address>
+    </div>
+    <nav class="footer-col" aria-label="Lab">
+      <h4><span class="zh">实验室</span><span class="en">Lab</span></h4>
+      <ul>
+        <li><a href="index.html#about"><span class="zh">实验室简介</span><span class="en">About</span></a></li>
+        <li><a href="research.html"><span class="zh">研究方向</span><span class="en">Research</span></a></li>
+        <li><a href="people.html"><span class="zh">团队成员</span><span class="en">People</span></a></li>
+        <li><a href="publications.html"><span class="zh">科研成果</span><span class="en">Publications</span></a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="News">
+      <h4><span class="zh">资讯</span><span class="en">News</span></h4>
+      <ul>
+        <li><a href="list.html"><span class="zh">新闻动态</span><span class="en">News</span></a></li>
+        <li><a href="join.html"><span class="zh">加入我们</span><span class="en">Join Us</span></a></li>
+        <li><a href="#contact"><span class="zh">联系我们</span><span class="en">Contact</span></a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Links">
+      <h4><span class="zh">相关链接</span><span class="en">Links</span></h4>
+      <ul>
+        <li><a href="#"><span class="zh">链接名称</span><span class="en">Link</span></a></li>
+        <li><a href="#"><span class="zh">链接名称</span><span class="en">Link</span></a></li>
+        <li><a href="#"><span class="zh">链接名称</span><span class="en">Link</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<!-- 学校页脚：左侧校名也可换成学校标识图片（在 .univ-wordmark 里放 <img>） -->
+<footer class="global-footer" aria-label="University">
+  <div class="wrap gf-inner">
+    <a class="univ-wordmark" href="#">
+      <span class="uw-zh">上海交通大学</span>
+      <span class="uw-en">Shanghai Jiao Tong University</span>
+    </a>
+    <div class="gf-menu">
+      <ul class="gf-primary">
+        <li><a href="#"><span class="zh">大学主页</span><span class="en">University Home</span></a></li>
+        <li><a href="#"><span class="zh">学院主页</span><span class="en">School Home</span></a></li>
+        <li><a href="#"><span class="zh">校园地图</span><span class="en">Campus Map</span></a></li>
+        <li><a href="#"><span class="zh">信息门户</span><span class="en">Portal</span></a></li>
+        <li><a href="#"><span class="zh">图书馆</span><span class="en">Library</span></a></li>
+      </ul>
+      <ul class="gf-secondary">
+        <li><a href="#"><span class="zh">使用条款</span><span class="en">Terms of Use</span></a></li>
+        <li><a href="#"><span class="zh">隐私政策</span><span class="en">Privacy</span></a></li>
+        <li><a href="#"><span class="zh">版权声明</span><span class="en">Copyright</span></a></li>
+        <li><a href="#"><span class="zh">网站地图</span><span class="en">Site Map</span></a></li>
+        <li><a href="#"><span class="zh">无障碍</span><span class="en">Accessibility</span></a></li>
+      </ul>
+      <p class="gf-copy"><span class="zh">© 2026 上海交通大学　地址：待填写　备案号：待填写</span><span class="en">© 2026 Shanghai Jiao Tong University · Address: to be added · ICP: to be added</span></p>
+    </div>
+  </div>
+</footer>
+
+<a class="to-top" href="#main" aria-label="返回顶部 / Back to top">
+  <span class="hex"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 2.25h10M8 14V5.5M4 9.25l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+</a>
+<script src="js/main.js"></script>
+<!-- ===== FOOTER END ===== -->
+</body>
+</html>
